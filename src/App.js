@@ -1,25 +1,56 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Routes, Route, Link, Outlet } from "react-router-dom";
+import About from "./About";
+import Home from "./Home";
+import Contact from "./Contact";
+import Puja from "./Puja.js";
+import { Fragment } from "react";
+
+// Link, Outlet
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="Invitation" element={<Home />} />
+          <Route path="PUJA" element={<Puja />} />
+          <Route path="LOCATION" element={<About />} />
+          <Route path="CONTACT" element={<Contact />} />
+        </Route>
+      </Routes>
     </div>
   );
 }
 
 export default App;
+function Layout() {
+  return (
+    <div>
+      <div>hello</div>
+      <center>
+        <h1>WELCOME To HOUSE WARMING PARTY</h1>
+
+        <nav className="header">
+          <Fragment>
+            <Link className="sai" to="Invitation">
+              <h2>INVITATION</h2>
+            </Link>{" "}
+            <Link className="sai" to="PUJA">
+              <h2 className="sai">PUJA</h2>
+            </Link>{" "}
+            <Link className="sai" to="LOCATION">
+              <h2 className="sai">LOCATION</h2>
+            </Link>{" "}
+            <Link className="sai" to="CONTACT">
+              <h2 className="sai">CONTACT</h2>
+            </Link>{" "}
+          </Fragment>
+        </nav>
+        <div className="content">
+          <Outlet />
+        </div>
+      </center>
+    </div>
+  );
+}
