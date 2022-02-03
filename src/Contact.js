@@ -1,16 +1,11 @@
 import React from "react";
 import "./Contact.css";
+import Header from "./Header";
+import "./Mama";
 function Contact() {
   return (
     <div className="bothside">
-      <br /> <br /> <br />
-      <br />
-      <br />
       <br /> <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <br />
       <h5 className="LEFTSIDE">
         NAME : NAVEEN KUMAR {<br />}

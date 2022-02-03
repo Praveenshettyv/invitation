@@ -29,7 +29,10 @@ function Layout() {
     <div>
       <div>hello</div>
       <center>
-        <h1>WELCOME To HOUSE WARMING PARTY</h1>
+        <h1>-------------------------------------</h1>
+        <h1 className="raju"> WELCOME To HOUSE WARMING PARTY</h1>
+        <h1>-------------------------------------</h1>
+        <h1>You are invited to our housewarming party!</h1>
 
         <nav className="header">
           <Fragment>

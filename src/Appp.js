@@ -1,23 +1,21 @@
-import "./App.css";
-import { Routes, Route } from "react-router-dom";
+import React from "react";
 import About from "./About";
-import Home from "./Home";
+import "./App.css";
 import Contact from "./Contact";
-import Puja from "./Puja.js";
-function Appp() {
+import Home from "./Home";
+import Puja from "./Puja";
+const Appp = () => {
   return (
     <div>
-      <Routes>
-        <Route>
-       
-          <Route exact path="/" />
-          <Route exact path="/Invitation" component={Home} />
-          <Route exact path="/Puja" component={Puja} />
-          <Route exact path="/Contact" component={Contact} />
-          <Route exact path="/LOCATION" component={About} />
-        </Route>
-      </Routes>
+      <Home />
+      <center>
+        <About />
+      </center>
+
+      <Puja />
+      <Contact />
     </div>
   );
-}
+};
+
 export default Appp;

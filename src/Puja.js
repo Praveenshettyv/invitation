@@ -19,6 +19,7 @@ function Puja(props) {
             your gracious presence to share our joy And happiness{<br />} on the
             occasion of Satyanarayana Puja.
           </h1>
+          <h4>Dinner: FROM 1PM ONWORDS</h4>
         </center>
       </h3>
     </div>

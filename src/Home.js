@@ -7,11 +7,11 @@ function Home(props) {
   return (
     <div className="Homee">
       <center className="helloo">
-        <Mama />
         <br /> <br />
         <h1>HOUSE WARMING CEREMONY</h1>
         <h5>WE CORDIALLY INVITE YOU TO THE </h5>
         <h5>GRUHA PRAVESHAM</h5>
+        <h5>Date :- 07-02-2022 </h5>
         <h5>WELCOME AND SHARE YOUR HAPPINESS.</h5>
         <br />
         <div>-ADDRESS-</div>
